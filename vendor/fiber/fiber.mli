@@ -1,6 +1,6 @@
 (** Concurrency library *)
 
-open! Stdune
+open! Lsp_stdune
 
 (** {1 Generals} *)
 

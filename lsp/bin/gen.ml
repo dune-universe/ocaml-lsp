@@ -1,4 +1,4 @@
-open Stdune
+open Lsp_stdune
 open Lsp_gen
 
 module Output = struct

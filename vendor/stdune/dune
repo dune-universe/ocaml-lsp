@@ -4,7 +4,7 @@
  (action (run %{bin:cppo} -V OCAML:%{ocaml_version} %{ml} -o %{targets})))
 
 (library
- (name stdune)
+ (name lsp_stdune)
  (public_name lsp.stdune)
  (synopsis "[Internal] Standard library of Dune")
  (preprocess future_syntax)

@@ -1,21 +1,21 @@
-open Stdune
-module List = Stdune.List
-module Hashtbl = Stdune.Hashtbl
-module Option = Stdune.Option
-module Either = Stdune.Either
-module Int = Stdune.Int
-module Dyn = Stdune.Dyn
-module Ordering = Stdune.Ordering
-module Exn = Stdune.Exn
-module Unix_env = Stdune.Env
-module Fpath = Stdune.Path
+open Lsp_stdune
+module List = Lsp_stdune.List
+module Hashtbl = Lsp_stdune.Hashtbl
+module Option = Lsp_stdune.Option
+module Either = Lsp_stdune.Either
+module Int = Lsp_stdune.Int
+module Dyn = Lsp_stdune.Dyn
+module Ordering = Lsp_stdune.Ordering
+module Exn = Lsp_stdune.Exn
+module Unix_env = Lsp_stdune.Env
+module Fpath = Lsp_stdune.Path
 module Code_error = Code_error
 module Or_exn = Or_exn
 module Table = Table
 module Id = Id
 
 module String = struct
-  include Stdune.String
+  include Lsp_stdune.String
 
   let first_double_underscore_end s =
     let len = String.length s in
@@ -114,7 +114,7 @@ let let_ref r v f =
     raise exn
 
 module Result = struct
-  include Stdune.Result
+  include Lsp_stdune.Result
 
   let errorf fmt =
     let kerr _ = Error (Format.flush_str_formatter ()) in
@@ -276,4 +276,4 @@ module Fiber = struct
   end
 end
 
-let sprintf = Stdune.sprintf
+let sprintf = Lsp_stdune.sprintf

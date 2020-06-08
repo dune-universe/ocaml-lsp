@@ -1,4 +1,4 @@
-open! Stdune
+open! Lsp_stdune
 
 (* Invariant: the execution contxt passed to the continuation is the same as the
    current one *)

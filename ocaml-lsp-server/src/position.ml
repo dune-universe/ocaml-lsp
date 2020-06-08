@@ -13,7 +13,7 @@ let abs ({ line; character } : t) : t =
   { line = abs line; character = abs character }
 
 let compare ({ line; character } : t) (t : t) : Ordering.t =
-  Stdune.Tuple.T2.compare Int.compare Int.compare (line, character)
+  Lsp_stdune.Tuple.T2.compare Int.compare Int.compare (line, character)
     (t.line, t.character)
 
 let compare_inclusion (t : t) (r : Lsp.Types.Range.t) =

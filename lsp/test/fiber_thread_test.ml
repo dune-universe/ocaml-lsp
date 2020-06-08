@@ -1,4 +1,4 @@
-open! Stdune
+open! Lsp_stdune
 open Lsp
 
 let s = Scheduler.create ()

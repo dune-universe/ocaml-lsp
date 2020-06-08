@@ -14,10 +14,10 @@
  (name gen)
  (modules gen)
  (preprocess future_syntax)
- (libraries stdune lsp_gen))
+ (libraries lsp_stdune lsp_gen))
 
 (library
  (name lsp_gen)
  (preprocess future_syntax)
  (modules :standard \ gen)
- (libraries stdune))
+ (libraries lsp_stdune))

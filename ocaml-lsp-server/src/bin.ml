@@ -1,5 +1,5 @@
 open Import
-module Bin = Stdune.Bin
+module Bin = Lsp_stdune.Bin
 
 let _PATH =
   lazy
